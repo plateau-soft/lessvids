@@ -9,7 +9,9 @@ Still a work in progress.
 For now, adds two convenient download buttons below videos.
 One for the video itself and one for the metadata.
 Currently just defaults to these two, but customization will hopefully soon be added:
+
 `{displayName} {launchDate} {title} ({id}).mp4`
+
 `{launchDate} {title} ({id}).json`
 
 ## Planned
