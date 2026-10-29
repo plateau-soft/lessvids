@@ -1,0 +1,13 @@
+[tools]
+node = "latest"
+pnpm = "latest"
+gh = "latest"
+
+[tasks.release]
+description = "Bump patch version, build, push and publish a GitHub release"
+run = [
+  'pnpm version patch',
+  'pnpm build',
+  'git push --follow-tags',
+  'gh release create "$(git describe --tags --abbrev=0)" dist/lessvids.user.js --generate-notes',
+]
